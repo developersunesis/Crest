@@ -29,24 +29,12 @@
         android:textColor="@color/second"
         android:id="@+id/textView2" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="A production of Solvworth Corporation"
-        android:id="@+id/textView"
-        android:gravity="center"
-        android:textStyle="italic"
-        android:textColor="@color/fourth"
-        android:layout_above="@+id/textView2"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Developer: Sunesis"
+        android:text="Developersunesis 2017"
         android:id="@+id/textView3"
         android:gravity="center"
         android:typeface="sans"

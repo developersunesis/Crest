@@ -28,7 +28,7 @@ public class Splash extends Activity implements Animator.AnimatorListener {
     ImageView square;
     int state = 1;
     RelativeLayout layout;
-    TextView t1, t2, t3;
+    TextView t2, t3;
     PrefManager pref;
     DatabaseManager databaseManager;
     MediaPlayer mediaPlayer;
@@ -51,10 +51,8 @@ public class Splash extends Activity implements Animator.AnimatorListener {
 
         square = (ImageView) findViewById(R.id.square);
         layout = (RelativeLayout) findViewById(R.id.dad);
-        t1 = (TextView) findViewById(R.id.textView);
         t2 = (TextView) findViewById(R.id.textView2);
         t3 = (TextView) findViewById(R.id.textView3);
-        t1.setVisibility(View.GONE);
         t2.setVisibility(View.GONE);
         t3.setVisibility(View.GONE);
         translate(1000, getResources().getColor(R.color.first));
@@ -144,7 +142,6 @@ public class Splash extends Activity implements Animator.AnimatorListener {
             translate(1000, getResources().getColor(R.color.fourth));
         } else if(state == 4){
             mediaPlayer.stop();
-            t1.setVisibility(View.VISIBLE);
             t2.setVisibility(View.VISIBLE);
             t3.setVisibility(View.VISIBLE);
             startScan();
